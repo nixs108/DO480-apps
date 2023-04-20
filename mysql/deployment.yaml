@@ -7,7 +7,7 @@ metadata:
     app: todonodejs
     name: mysql
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: todonodejs
