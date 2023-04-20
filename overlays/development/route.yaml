@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: route
+metadata:
+  labels:
+    app: todonodejs
+    name: frontend
+  name: frontend
+spec:
+  host: todo.apps.ocp4.example.com
+  path: "/todo"
+  to:
+    kind: Service
+    name: dev-frontend
+    weight: 100
+  wildcardPolicy: None
+
